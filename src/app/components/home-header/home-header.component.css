@@ -1,0 +1,10 @@
+/* bg header img */
+.img-bg{
+  height: 50vh;
+background-image: url('/header/homeHeader.webp');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover"
+}
+

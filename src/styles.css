@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+/* fontsColor */
+.blueExp{
+    color: #1e3456;
+}
+
+.orangeExp{
+    color: #d87d39;
+}
+
+/* bg colors */
+
+.orangeBg{
+    background-color: #d87d39;
+}
+
+.blueBg{
+    background-color: #1e3456;
+}
+
+/* buttons */
+.btn:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* navBar bg */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+}
+
+/* Animación */
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.25); /* Corrección */
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1); /* Corrección */
+    }
+}
+
+/* Aplicar la animación */
+.img-animation {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 5% cover 45%;
+}

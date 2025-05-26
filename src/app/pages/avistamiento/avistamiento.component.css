@@ -1,0 +1,78 @@
+/* Features icons */
+.features-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+}
+
+.features-list {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    color: #1a237e;
+    font-size: 14px;
+}
+
+.feature-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* video buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+/* accordion */
+.accordion-item {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+  }
+
+  /* Botón del acordeón */
+  .accordion-button {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+  }
+
+  /* Botón al estar expandido */
+  .accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente al expandirse */
+    color: white; /* Texto blanco */
+    box-shadow: none; /* Quitar sombra */
+  }
+
+  /* Cuerpo del acordeón */
+  .accordion-body {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+}
+
+ /* Cambiar color de las flechas generadas por Bootstrap */
+.accordion-button::after {
+    color: white !important; /* Cambiar color del pseudo-elemento */
+    filter: brightness(0) invert(1); /* Si son imágenes, ajusta su color */
+}
+
+/* Asegurar que las flechas al expandirse también sean blancas */
+.accordion-button:not(.collapsed)::after {
+    color: white !important;
+    filter: brightness(0) invert(1); /* Para SVGs o imágenes */
+}
