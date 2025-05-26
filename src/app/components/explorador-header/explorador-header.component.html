@@ -5,9 +5,8 @@
 
     <!-- Textos centrados -->
   <div class="position-absolute top-50 start-50 translate-middle text-center px-3" style="z-index: 5;">
-    <h2 class="text-white fw-bold display-5 display-md-3 text-uppercase">¡Explora,</h2>
-    <h3 class="text-white fw-semibold fs-5 fs-md-4 mt-2">descubre</h3>
-    <h3 class="text-white fw-semibold fs-6 fs-md-5 mt-1">y conecta!</h3>
+    <h3 class="text-white fw-semibold fs-3 fs-md-4 mt-2">Explorador</h3>    
+    <h2 class="orangeExp fw-bold display-5 display-md-3 text-uppercase">DE ISLAS</h2>
   </div>
   
     <!-- Navbar sobre la imagen -->
@@ -15,7 +14,7 @@
       <div class="container d-flex align-items-center py-2 py-lg-4">
         <!-- Logo -->
         <a class="navbar-brand" href="#" title="Inicio">
-          <img src="header/mLogoNav.svg" alt="Munba Logo" width="140" class="img-fluid">
+          <img src="header/mLogoNav.svg" alt="Munba Logo" width="140" class="img-fluid" title="munba expedition">
         </a>
   
         <!-- Botón colapsable -->
@@ -27,13 +26,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav nav-underline gap-2 align-items-center text-center text-lg-start">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#videoCa" title="Sección Nosotros">INICIO</a>
+              <a class="nav-link text-white" routerLink="/home" title="avistamiento">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#videoCa" title="Sección Nosotros">ACTIVIDADES</a>
+              <a class="nav-link text-white" routerLink="/avistamiento" title="avistamiento">Avistamiento</a>
               </li>
             <li class="nav-item">
-              <a href="https://munbaexpeditions.mx/calendario-de-salidas/" target="_blank" class="nav-link text-white" title="Reserva tu expedición">RESERVA</a>
+              <a class="nav-link text-white" routerLink="/safari" title="safari">Safari Marino</a>
             </li>
           </ul>
         </div>
